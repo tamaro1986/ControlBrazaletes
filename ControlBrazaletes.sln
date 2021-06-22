@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlBrazaletes", "ControlBrazaletes\ControlBrazaletes.csproj", "{8CA0FD6B-CDFE-4214-808A-2B36C246970D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8CA0FD6B-CDFE-4214-808A-2B36C246970D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CA0FD6B-CDFE-4214-808A-2B36C246970D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CA0FD6B-CDFE-4214-808A-2B36C246970D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CA0FD6B-CDFE-4214-808A-2B36C246970D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BA5AC595-8524-4B0A-B8A6-C2D93E90B16D}
+	EndGlobalSection
+EndGlobal
