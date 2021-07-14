@@ -1,0 +1,293 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled1.ipynb",
+      "provenance": [],
+      "collapsed_sections": [],
+      "authorship_tag": "ABX9TyNHcM9bK744mZbt6dJOWFG5",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/tamaro1986/ControlBrazaletes/blob/master/Sesion_3\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "akPNrkkzfvOA",
+        "outputId": "77216376-6de9-44fd-85d5-17e1406d1586"
+      },
+      "source": [
+        "# Las listas son con corchetes y separados los valores por comas\n",
+        "# Nos permite modificar\n",
+        "\n",
+        "mylist = [\"apple\",\"banana\",\"cherry\",\"cherry\"]\n",
+        "print(mylist)\n",
+        "\n",
+        "# Modificamos el valor de un indice de la lista\n",
+        "mylist[2] = \"orange\"\n",
+        "print(mylist[2])\n",
+        "print(mylist)\n",
+        "\n",
+        "print(type(mylist))"
+      ],
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "['apple', 'banana', 'cherry', 'cherry']\n",
+            "orange\n",
+            "['apple', 'banana', 'orange', 'cherry']\n",
+            "<class 'list'>\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Lw0afGhqglxW",
+        "outputId": "6621ac9d-0010-425a-a9b9-bcb18113f34f"
+      },
+      "source": [
+        "# Modificamos el valor de un indice de la lista\n",
+        "mylist[2] = \"orange\"\n",
+        "print(mylist[2])\n",
+        "print(mylist)\n",
+        "\n",
+        "print(type(mylist))\n",
+        "\n",
+        "for i in mylist:\n",
+        "  print(\"Lista - \" + i)\n",
+        "\n",
+        "print(i)"
+      ],
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "orange\n",
+            "['apple', 'banana', 'orange', 'cherry']\n",
+            "<class 'list'>\n",
+            "Lista - apple\n",
+            "Lista - banana\n",
+            "Lista - orange\n",
+            "Lista - cherry\n",
+            "cherry\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "y22Rrt2QhkiM",
+        "outputId": "39e6c2db-5ffc-42ed-de54-1d6c5a778845"
+      },
+      "source": [
+        "# Las tuplas son con parentesis y separados los valores por comas\n",
+        "# Nos permite modificar\n",
+        "\n",
+        "thistuple = (\"apple\", \"banana\",\"cherry\")\n",
+        "print(thistuple)\n",
+        "\n",
+        "# Podemoas acceder por medio de indices\n",
+        "print(thistuple[0])\n",
+        "print(thistuple[2])\n",
+        "print(type(thistuple))"
+      ],
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "('apple', 'banana', 'cherry')\n",
+            "apple\n",
+            "cherry\n",
+            "<class 'tuple'>\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "7TQ0zkKOiW2U",
+        "outputId": "769bb53b-a001-493e-9275-186beb1a9fdc"
+      },
+      "source": [
+        "# Los Set son con llaves y separados los valores por comas\n",
+        "# Nos permiten modificar\n",
+        "# No esta ordenado\n",
+        "# No permite duplicados\n",
+        "\n",
+        "thisset = {\"apple\",\"banana\",\"cherry\"}\n",
+        "\n",
+        "print(thisset)"
+      ],
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "{'banana', 'cherry', 'apple'}\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ChIzcRKYiuj1",
+        "outputId": "1ebf4124-e15b-4fe8-8d62-bb3cec065ddb"
+      },
+      "source": [
+        "# Las Diccionary son con llaves y separados los valores por comas\n",
+        "# Permite modificar\n",
+        "# Permite ordenado\n",
+        "# No permite duplicados\n",
+        "\n",
+        "thisdict = {\n",
+        "    \"brand\": \"Ford\",\n",
+        "    \"Model\": \"Mustang\",\n",
+        "    \"year\": 1964\n",
+        "}\n",
+        "\n",
+        "print(thisdict)\n",
+        "print(thisdict[\"brand\"])\n",
+        "print(thisdict[\"Model\"])\n",
+        "print(thisdict[\"year\"])\n",
+        "print(type(thisdict))"
+      ],
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "{'brand': 'Ford', 'Model': 'Mustang', 'year': 1964}\n",
+            "Ford\n",
+            "Mustang\n",
+            "1964\n",
+            "<class 'dict'>\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "5QLhBUzbj-Qr",
+        "outputId": "115e5b7e-4771-45fc-8f31-eef1141bf744"
+      },
+      "source": [
+        "\n",
+        "\n",
+        "thisdict = {\n",
+        "    \"brand\": \"Ford\",\n",
+        "    \"Model\": \"Mustang\",\n",
+        "    \"year\": 1964,\n",
+        "    \"Carrera\": {\"Lugar\":\"Moscu\",\"Posicion\":2}\n",
+        "}\n",
+        "print(thisdict)\n",
+        "print(thisdict[\"year\"])\n",
+        "\n",
+        "for value in thisdict:\n",
+        "  print(\"Diccionary -\", value, \":\", thisdict[value] )\n",
+        "\n",
+        "  if type(thisdict[value]) == \"<class 'dict'>\":\n",
+        "    for i in thisdict[value]:\n",
+        "      print(\"Diccionary Interno - \" + i + \" : \"), thisdict[i]"
+      ],
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "{'brand': 'Ford', 'Model': 'Mustang', 'year': 1964, 'Carrera': {'Lugar': 'Moscu', 'Posicion': 2}}\n",
+            "1964\n",
+            "Diccionary - brand : Ford\n",
+            "Diccionary - Model : Mustang\n",
+            "Diccionary - year : 1964\n",
+            "Diccionary - Carrera : {'Lugar': 'Moscu', 'Posicion': 2}\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "0u3TBu7FnI7s",
+        "outputId": "4fc79675-00cd-446b-b38f-1b24aed23fe8"
+      },
+      "source": [
+        "for x in range(0, 31, 3): print(x)"
+      ],
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "0\n",
+            "3\n",
+            "6\n",
+            "9\n",
+            "12\n",
+            "15\n",
+            "18\n",
+            "21\n",
+            "24\n",
+            "27\n",
+            "30\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
